@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .looping-text {
+      margin-top: 20px;
+      overflow: hidden;
+      position: relative;
+      height: 30px;
+    }
+
+    .looping-text p {
+      position: absolute;
+      width: 100%;
+      white-space: nowrap;
+      animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .portfolio-image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 10px;
+      background-color: #121212;
+      display: block;
+    }
+
+    .portfolio-description {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light style="background-color: #f4f4f4;>
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="md.png" alt="Logo" style="height: 27px; margin-right: 10px;">
+        <span class="nav-link p-0 m-0" style="font-size: 1rem;">mananyadesigns</span>
+      </a>
+       
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-3">
+            <a class="nav-link text-dark" href="#about">About Me</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link text-dark" href="work.html">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-dark" href="contact.html">Get in touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
+  <header class="text-center py-5">
+    <div class="container">
+      <div class="mx-auto" style="max-width: 1300px; overflow: hidden;">
+        <img 
+          src="portfolio background.png" 
+          alt="Portfolio Title" 
+          class="img-fluid" 
+          style="border-radius: 25px; width: 100%; height: auto;">
+      </div>
+    </div>     
+<div class="looping-text mt-3 text-center">
+  <p class="fs-5">• brand identity design • typeface design • logo design • poster design • packaging design • ui design • custom illustrations • infographics • campaign design</p>
+</div>   
+  </header>
+
+  <section id="about" class="py-5 d-flex justify-content-center">
+    <div class="container">
+      
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4 mb-4 mb-md-0 d-flex justify-content-center">
+          <img src="mee@2x.png" alt="Mananya Sawant" class="img-fluid" style="max-width: 300px;">
+        </div>
+        
+
+        <div class="col-md-7">
+          <h2 class="mb-4" style="font-family: 'Poppins', sans-serif; font-weight: 700; color: #121212;">About Me</h2>
+          <p class="lead" style="font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 37px; max-width: 650px; color: #121212;">
+            Hi! I’m <strong>Mananya Sawant</strong>, a 20-year-old Communication Designer from Mumbai with a passion for music and art. Over the past three years, I’ve successfully completed 50+ branding, typography, and UI/UX projects as a freelancer. Let’s create something amazing together!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="portfolio" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4" style="font-family: 'Poppins', sans-serif; font-weight: 700; color: #121212;">Work</h2>
+      <div class="d-flex justify-content-center align-items-center">
+      
+        <div style="margin-right: 20px;" id="leftArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg>
+        </div>
+      
+      
+        <div class="container position-relative" style="width: 70%; height: auto;">
+          <img id="carouselImage" src="file_2024-12-02_06.18.52.png" alt="Background" class="img-fluid w-100 h-100" style="border-radius: 24px; object-fit: cover;">
+        </div>
+      
+      
+        <div style="margin-left: 20px;" id="rightArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
+        </div>
+      </div>
+      
+      <script>
+      
+        const images = [
+          "file_2024-12-02_06.18.52.png",
+          "cc.png",
+          "port3.png",
+          "port4.png",
+          "port5.png",
+          "port6.png",
+          "port7.png",
+          "port8.png",
+          "port9.png",
+          "port10.png",
+          "port11.png",
+          "port12.png",
+        ];
+      
+        let currentImageIndex = 0;
+      
+      
+        const imageElement = document.getElementById("carouselImage");
+        const leftArrow = document.getElementById("leftArrow");
+        const rightArrow = document.getElementById("rightArrow");
+      
+      
+        leftArrow.addEventListener("click", function() {
+          currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+          imageElement.src = images[currentImageIndex];
+        });
+      
+      
+        rightArrow.addEventListener("click", function() {
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          imageElement.src = images[currentImageIndex];
+        });
+      </script>
+      
+      
+      <p class="text-center mt-4" style="font-size: 18px; font-weight: 400; line-height: 37px; width: 80%; margin: 0 auto;">
+        Discover a blend of my freelance projects, passion-driven creations, and academic assignments. Each piece reflects my journey and growth as a designer.
+      </p>
+    </div>
+  </section>
+  
+
+  <footer class="text-center py-4 bg-light">
+    <p class="text-dark">&copy; 2024 Mananyadesigns. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
